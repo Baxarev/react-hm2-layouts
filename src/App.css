@@ -1,38 +1,86 @@
-.App {
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.store-container {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 50px;
+  justify-content: space-between;
+}
+
+.card {
+  padding: 20px 0;
+  width: 30%;
+  background-color: #F5F5F5;
+  box-shadow:
+  0 4px 8px rgba(0, 0, 0, 0.1),
+  4px 0 8px rgba(0, 0, 0, 0.1), 
+  -4px 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.card__title {
+  text-transform: uppercase;
+}
+
+.card__title, .card__color {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card__img-container {
+  margin: 0 auto;
+  width: 300px;
+  height: 300px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card__img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card__footer {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
 }
 
-.App-link {
-  color: #61dafb;
+.card__price, .card__btn {
+  color: #ff0000;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card__btn {
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 5px 15px;
+  border: 1px solid #ff0000;
+  border-radius: 1rem;
+}
+
+.icon {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 5px;
+}
+
+.material-icons {
+  font-size: 30px;
+  cursor: pointer;
 }
